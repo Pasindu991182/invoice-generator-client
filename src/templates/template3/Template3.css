@@ -1,0 +1,273 @@
+/* Template3 - Minimalist Clean Design */
+.template3 {
+    max-width: 800px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    color: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header-section {
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 20px;
+}
+
+.logo-minimal {
+    border-radius: 6px;
+}
+
+.company-name-minimal {
+    font-weight: 700;
+    color: #1f2937;
+    font-size: 24px;
+    margin: 0;
+}
+
+.company-tagline {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.invoice-number-badge {
+    text-align: right;
+}
+
+.invoice-label {
+    color: #6b7280;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.invoice-number {
+    color: #111827;
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    line-height: 1;
+}
+
+.company-bar {
+    background: #f9fafb;
+    border-radius: 6px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Invoice Meta Cards */
+.invoice-meta .meta-card {
+    text-align: center;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.meta-label {
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.meta-value {
+    color: #111827;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.total-preview {
+    color: #059669;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Client Section */
+.client-section {
+    margin: 40px 0;
+}
+
+.client-info {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.client-title {
+    color: #374151;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.client-name {
+    font-weight: 700;
+    color: #111827;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.client-address {
+    color: #4b5563;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.client-contact {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Minimal Table */
+.items-table-section {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.minimal-table {
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.minimal-table thead th {
+    background: #f9fafb;
+    color: #374151;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    border-right: 1px solid #f3f4f6;
+}
+
+.minimal-table thead th:last-child {
+    border-right: none;
+}
+
+.minimal-table tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+    transition: background-color 0.15s ease;
+}
+
+.minimal-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.minimal-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.minimal-table tbody td {
+    padding: 16px;
+    border-right: 1px solid #f3f4f6;
+}
+
+.minimal-table tbody td:last-child {
+    border-right: none;
+}
+
+.item-description .item-name {
+    font-weight: 600;
+    color: #111827;
+}
+
+.item-description .item-note {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.item-total {
+    font-weight: 600;
+    color: #059669;
+}
+
+/* Summary Section */
+.summary-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #4b5563;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.summary-line:last-of-type {
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 12px;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    color: #059669;
+    padding: 12px 0;
+    background: #f0fdf4;
+    margin: 0 -24px -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Footer Sections */
+.footer-section {
+    padding: 20px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.footer-title {
+    color: #374151;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.notes-content {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Invoice Footer */
+.invoice-footer {
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 13px;
+}

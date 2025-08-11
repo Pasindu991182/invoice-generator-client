@@ -1,0 +1,227 @@
+/* Layout and Sizing */
+.w-800 {
+    max-width: 800px;
+}
+
+.w-1000 {
+    max-width: 1000px;
+}
+
+/* Typography Enhancements */
+.company-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #008b8b;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #008b8b, #20b2aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 139, 139, 0.3);
+}
+
+.billing-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #008b8b;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0f2f1;
+    position: relative;
+}
+
+.billing-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #008b8b, #20b2aa);
+}
+
+/* Container and Layout */
+.template1 {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.template1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #008b8b, #20b2aa, #48cae4);
+}
+
+/* Border Enhancements */
+.orange-border {
+    border-color: #8b008b !important;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Billing Box Styling */
+.billing-box {
+    background: linear-gradient(135deg, #fff7ed, #fef3e7);
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(254, 215, 170, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.billing-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.billing-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(254, 215, 170, 0.3);
+}
+
+/* Table Enhancements */
+.table-bordered {
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table-header {
+    background: linear-gradient(135deg, #fff7ed, #fef3e7);
+    color: #1f2937 !important;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #fed7aa;
+    position: relative;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8fafc;
+    transform: scale(1.01);
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* Totals Box Styling */
+.totals-box {
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #d0f0c0, #c8e6c9);
+    border: 2px solid #a5d6a7;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(165, 214, 167, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.totals-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4caf50, #66bb6a);
+}
+
+/* Total Highlight */
+.total-highlight {
+    color: #1b5e20 !important;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 0;
+    border-top: 1px solid #a5d6a7;
+    margin-top: 8px;
+    text-shadow: 0 1px 2px rgba(27, 94, 32, 0.1);
+}
+
+.template1 .company-title {
+    color: #2c3e50 !important;
+}
+
+/* Enhanced Visual Elements */
+.template1 p {
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.template1 strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .invoice-title {
+        font-size: 28px;
+    }
+
+    .company-title {
+        font-size: 22px;
+    }
+
+    .billing-title {
+        font-size: 18px;
+    }
+
+    .template1 {
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .table-responsive {
+        border-radius: 6px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .template1 {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .billing-box:hover {
+        transform: none;
+    }
+
+    .table tbody tr:hover {
+        background-color: transparent;
+        transform: none;
+    }
+}

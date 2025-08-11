@@ -1,0 +1,200 @@
+/* Template2 - Modern Dark Theme */
+.template2 {
+    max-width: 800px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Section */
+.template2-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.company-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.company-details {
+    color: #e8e8e8;
+    font-size: 14px;
+}
+
+.company-logo {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.invoice-badge {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    padding: 15px 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.3);
+}
+
+.invoice-title {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.invoice-details {
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+/* Client Cards */
+.client-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #ffd700;
+    font-weight: 600;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 8px;
+}
+
+.client-name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.client-address, .client-phone {
+    color: #e8e8e8;
+    font-size: 14px;
+}
+
+/* Items Section */
+.items-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.section-title {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.table-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.modern-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-header-row {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.table-header-row th {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.table-row {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table-row td {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.item-desc {
+    font-size: 12px;
+    color: #cccccc;
+    margin-top: 4px;
+}
+
+.qty-cell {
+    background: rgba(255, 215, 0, 0.2);
+    font-weight: 600;
+}
+
+.amount-cell {
+    font-weight: 600;
+    color: #00ff88;
+}
+
+/* Summary Section */
+.summary-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.summary-row {
+    color: #e8e8e8;
+    font-size: 16px;
+}
+
+.summary-divider {
+    border-color: rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+.total-row {
+    color: #00ff88;
+    font-size: 18px;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Bank Section */
+.bank-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Notes Section */
+.notes-section {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.notes-text {
+    color: #f1f1f1;
+    line-height: 1.6;
+}

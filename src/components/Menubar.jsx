@@ -35,7 +35,7 @@ const Menubar = () => {
               <Link className="nav-link text-white" to="/generate">Generate</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/preview">Preview</Link>
+              <Link className="nav-link text-white" to="/dashbord">Dashboard</Link>
             </li>
             <li className="nav-item ms-3">
               <button className="btn btn-outline-light btn-sm">

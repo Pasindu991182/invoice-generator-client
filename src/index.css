@@ -2,21 +2,33 @@
 
 /* Global Font */
 * {
-  font-family: 'Urbanist', sans-serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 /* Utility Classes */
 .cursor-pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.spin-animation{
+.spin-animation {
     animation: spin 1s linear infinite;
 }
 
-.mainpage  input:focus
-.invoiceform input:focus
-.invoiceform textarea:focus
-.invoiceform select:focus{
+/* Input Focus Styles */
+.mainpage input:focus,
+.invoiceform input:focus,
+.invoiceform textarea:focus,
+.invoiceform select:focus {
     box-shadow: none !important;
+}
+
+/* Invoice Preview Styles */
+.previewpage .invoice-preview {
+    width: 969px;
+    height: 1123px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    padding: 0;
+    background-color: #d0f0c0; /* Light green background */
+    overflow: hidden;
 }

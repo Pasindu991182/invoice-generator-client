@@ -1,19 +1,54 @@
-import React, { useContext, useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Pencil } from 'lucide-react';
+import toast from 'react-hot-toast';
 import { AppContext } from '../context/AppContext';
 import InvoiceForm from '../components/InvoiceForm';
+import TemplateGrid from '../components/TemplateGrid';
+import {useNavigate} from "react-router-dom"
 
 const Mainpage = () => {
   const [isEditingTitle, setEditingTitle] = useState(false);
-  const { invoiceTitle, setInvoiceTitle } = useContext(AppContext);
+  const navigate = useNavigate();
+  const { invoiceTitle, setInvoiceTitle, invoiceData, setInvoiceData, setSelectedTemplate } = useContext(AppContext);
 
   const handleTitleChange = (e) => {
-    setInvoiceTitle(e.target.value);
+    const newTitle = e.target.value;
+    setInvoiceTitle(newTitle);
+    setInvoiceData((prev) => ({
+      ...prev,
+      title: newTitle
+    }))
   };
+
+  const handleTemplateClick = (templateId) => {
+    const hasInvalidItem = invoiceData.items.some(
+      (item) => !item.qty || !item.amount
+    );
+    
+    if (hasInvalidItem) {
+      toast.error("Please enter quantity and amount for all items");
+      return;
+
+    }
+    
+    toast.success("Template selected successfully!");
+    setSelectedTemplate(templateId);
+    navigate("/preview")
+  }
 
   const handleTitleBlur = () => {
     setEditingTitle(false);
   };
+
+  useEffect(() => {
+    if(!invoiceData.invoice.number){
+      const randomNumber = `Inv-${Math.floor(10000 + Math.random() * 900000)}`;
+      setInvoiceData((prev) => ({
+        ...prev,
+        invoice: {...prev.invoice, number: randomNumber},
+      }))
+    }
+  }, [invoiceData, setInvoiceData])
 
   return (
     <div className=' mainpage container-fluid bg-light min-vh-100 py-4'>
@@ -62,9 +97,7 @@ const Mainpage = () => {
           {/* Template Preview */}
           <div className='col-12 col-lg-6 d-flex'>
             <div className='bg-white border rounded shadow-sm p-4 w-100'>
-              <h6 className='mb-3'>Template Preview</h6>
-              {/* Add your invoice preview or template display here */}
-              <p>Preview content goes here...</p>
+               <TemplateGrid onTemplateClick={handleTemplateClick} />
             </div>
           </div>
         </div>

@@ -1,0 +1,423 @@
+/* Template4 - Creative Colorful Design */
+.template4 {
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Colorful Header */
+.colorful-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.wave-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M20 20c0 11.046-8.954 20-20 20v20h40V20c0-11.046-8.954-20-20-20z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-frame {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.company-logo-creative {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.creative-company-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.company-subtitle {
+    font-size: 14px;
+    color: #f0f8ff;
+    font-weight: 500;
+}
+
+.company-info-creative .info-item {
+    color: #e8f4f8;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.invoice-header-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.invoice-type-badge {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.invoice-number-creative {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.invoice-dates div {
+    color: #e8f4f8;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+/* Template Body */
+.template4-body {
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 500px;
+}
+
+/* Creative Client Cards */
+.creative-client-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creative-client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bill-card .card-header-creative {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.ship-card .card-header-creative {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.card-header-creative {
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-icon {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title-creative {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-body-creative {
+    padding: 20px;
+}
+
+.client-name-creative {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.client-details-creative div {
+    color: #4a5568;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Creative Items Section */
+.creative-items-section {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-title-creative {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+    text-align: center;
+}
+
+.creative-table-container {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.creative-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.creative-table-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.creative-table-header th {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+.creative-table-row {
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+.creative-table-row:nth-child(even) {
+    background: #edf2f7;
+}
+
+.creative-table-row:hover {
+    background: #e2e8f0;
+    transform: scale(1.01);
+}
+
+.creative-table-row td {
+    border: none;
+    vertical-align: middle;
+}
+
+.item-name-creative {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 16px;
+}
+
+.item-desc-creative {
+    color: #718096;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.qty-badge {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.rate-cell {
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.amount-highlight {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* Creative Summary */
+.creative-summary-section {
+    margin-top: 30px;
+}
+
+.total-summary-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.summary-icon {
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-title {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.grand-total {
+    font-size: 28px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.breakdown-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.breakdown-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2d3748;
+    border-top: 2px solid #667eea;
+    margin-top: 10px;
+}
+
+/* Bank Details */
+.bank-details-creative {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.creative-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.section-icon {
+    font-size: 24px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+}
+
+.bank-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.bank-info-item {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.info-label {
+    font-size: 12px;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 16px;
+}
+
+/* Notes */
+.notes-creative {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.notes-content-creative {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 10px;
+    color: #4a5568;
+    line-height: 1.6;
+    border-left: 4px solid #f093fb;
+}
+
+/* Creative Footer */
+.creative-footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 15px;
+    color: white;
+}
+
+.footer-decoration {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
